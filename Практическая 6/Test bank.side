@@ -1,0 +1,133 @@
+{
+  "id": "bd03a104-0738-4db9-9dab-257e6d349a06",
+  "version": "2.0",
+  "name": "Test 1",
+  "url": "https://idemo.bspb.ru/",
+  "tests": [{
+    "id": "2498f349-d943-46e3-a8b7-ef103044c12b",
+    "name": "open",
+    "commands": [{
+      "id": "6376b817-cdb5-4e17-b43c-d4240a2a6db2",
+      "comment": "",
+      "command": "open",
+      "target": "https://idemo.bspb.ru/auth?response_type=code&client_id=1&redirect_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fprefetch&force_new_session=true",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ba912281-27a6-4da8-9bd5-25ae6fe7da61",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "969x774",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e06aff2-4893-4827-afa5-46ce2207a2ec",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["id=login-button", "id"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//button[@id='login-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f87f47ae-9884-4cb7-abd4-ad8beb2a017e",
+      "comment": "",
+      "command": "click",
+      "target": "id=login-otp-button",
+      "targets": [
+        ["id=login-otp-button", "id"],
+        ["css=#login-otp-button", "css:finder"],
+        ["xpath=//button[@id='login-otp-button']", "xpath:attributes"],
+        ["xpath=//form[@id='login-form']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Войти')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "00e1ecc1-966a-48e4-b9a9-646e6e40d8b9",
+      "comment": "",
+      "command": "click",
+      "target": "id=deposits-index",
+      "targets": [
+        ["id=deposits-index", "id"],
+        ["css=#deposits-index", "css:finder"],
+        ["xpath=//a[contains(text(),'Вклады')]", "xpath:link"],
+        ["xpath=//a[@id='deposits-index']", "xpath:attributes"],
+        ["xpath=//li[@id='deposits']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/deposits')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9fa8a339-1600-431f-96b1-a799893fc0f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=В ожидании",
+      "targets": [
+        ["linkText=В ожидании", "linkText"],
+        ["css=tr:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'В ожидании')]", "xpath:link"],
+        ["xpath=//table[@id='deposits']/tbody/tr[3]/td/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/deposits/orderDetails/10061')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'В ожидании')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d198b6a-2a38-4fb9-b4ac-7a40aeca7369",
+      "comment": "",
+      "command": "click",
+      "target": "css=.filter-option",
+      "targets": [
+        ["css=.filter-option", "css:finder"],
+        ["xpath=//div[@id='representee-list']/div/button/span", "xpath:idRelative"],
+        ["xpath=//button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "860a6ec7-8c8d-4ab1-b7e9-3a4537b84564",
+      "comment": "",
+      "command": "click",
+      "target": "css=.active .text",
+      "targets": [
+        ["css=.active .text", "css:finder"],
+        ["xpath=//div[@id='representee-list']/div/div/ul/li[2]/a/span", "xpath:idRelative"],
+        ["xpath=//li[2]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "62ed5d8f-43c3-438c-a74e-2cf5856b4782",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-close",
+      "targets": [
+        ["css=.icon-close", "css:finder"],
+        ["xpath=//a[@id='logout-button']/span", "xpath:idRelative"],
+        ["xpath=//div/a[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f50f4329-3a11-47c2-b1ab-81577228ac3e",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "46919e3e-1162-4012-88a7-f4116696861f",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2498f349-d943-46e3-a8b7-ef103044c12b"]
+  }],
+  "urls": ["https://qahacking.guru/", "https://idemo.bspb.ru/"],
+  "plugins": []
+}
